@@ -6,7 +6,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  demo:
+  job-demo:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Print ENVS
+        run: date
+      - name: Print current directory
+        run: pwd
+      - name: Print current user
+        run: whoami
+  job-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building app
+        run: echo "Running commands for build app"
+  job-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print github envs
+        run: echo ${{ github }}
