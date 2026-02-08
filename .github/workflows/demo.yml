@@ -1,7 +1,9 @@
 name: GHA demo
 #run-name: ${{ github.actor }} is testing out GitHub Action
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   demo:
