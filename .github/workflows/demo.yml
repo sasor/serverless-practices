@@ -1,0 +1,10 @@
+name: GHA demo
+run-name: ${{ github.actor }} is testing out GitHub Action
+
+on: push
+
+jobs:
+  demo:
+    runs-on: ubuntu-lastest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
