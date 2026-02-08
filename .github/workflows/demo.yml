@@ -1,5 +1,5 @@
 name: GHA demo
-run-name: ${{ github.actor }} is testing out GitHub Action
+#run-name: ${{ github.actor }} is testing out GitHub Action
 
 on: push
 
