@@ -63,3 +63,4 @@ Notas:
 
 - Este workflow es una plantilla demostrativa; reemplaza los pasos de build por comandos reales (instalación de dependencias, tests, compilación, etc.) según tu proyecto.
 - Evita imprimir secretos en logs; usa GitHub Secrets y variables de entorno protegidas para credenciales.
+
