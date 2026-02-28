@@ -11,20 +11,21 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
+      - name: Print ENVS
+        run: env
+
       - name: $HOME directory
         run: |
           cd $HOME
           pwd
-          tree -L 1
-
-      - name: workspace directory
-        run: echo $GITHUB_WORKSPACE
+          ls -ls
 
       - name: $WORK directory
         run: |
-          cd $HOME/work/_temp
+          cd $HOME/work/_temp/_github_workflow
           pwd
-          tree -L 2
+          ls -ls
+          cat event.json
 
   dump:
     runs-on: ubuntu-latest
